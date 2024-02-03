@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-style.css">
+</head>
+<body>
+    <%- include('layout/nav.ejs'); %>
+    <div class="add">
+        <%
+            if(typeof(status)!='undefined'){
+                if(status == "ok"){
+                    %>
+                        <h5>Data Added</h5>
+                    <%
+                }
+            }
+        %>
+        <form action="/adddata" method="post">
+            <select name="type" required>
+                <option value="debit">Debit</option>
+                <option value="credit">Credit</option>
+            </select>
+            <input type="date" name="date" required>
+            <!-- <input type="time" name="time" required> -->
+            <input type="text" name="note" placeholder="Note" required>
+            <input type="number" name="amount" placeholder="Amount" required>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</body>
+</html>

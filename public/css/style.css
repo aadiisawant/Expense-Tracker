@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #177777;
+    color: yellow;
+    padding: 10px 20px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+nav a{
+    color: yellow;
+    text-decoration: none;
+}
+img{
+    display: block;
+    margin: 30px auto;
+}
+
+.display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Optionally, if you want it to take the full height of the viewport */
+  }
+
+table{
+    display: inline-block;
+
+}
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 5px;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+table td a{
+    text-decoration: none;
+}
